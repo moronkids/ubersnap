@@ -36,7 +36,7 @@ function Index(props: any) {
                     </div>
                     <div className="movie-list row text-center mx-auto col-12">
                         {
-                            movie?.map((val: any, index: any) => {
+                            movie?.length > 0 ? movie?.map((val: any, index: any) => {
 
                                 return (
                                     <div className="movie-list_box mx-auto" key={val.Year + index}>
@@ -53,7 +53,7 @@ function Index(props: any) {
                                         </div>
                                     </div>
                                 )
-                            })
+                            }) : (<><h3>Sorry movie {temp} not found :(</h3></>)
                         }
                     </div>
                 </div>
