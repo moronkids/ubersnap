@@ -25,7 +25,7 @@ function Searchbox(props: any) {
 
     return (
         <>
-            <input className="search-box" onChange={(e) => debouncedChangeHandler(e)}>
+            <input placeholder='Search Movie...' className="search-box" onChange={(e) => debouncedChangeHandler(e)}>
 
             </input>
         </>
