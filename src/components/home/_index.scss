@@ -1,0 +1,74 @@
+.home {
+    background-color: black;
+    min-height: 100vh;
+    color: rgb(243, 243, 243);
+    font-family: $poppins;
+    @media (max-width: 524px) {
+        padding: 20px;
+    }
+    .title-pg {
+        padding-top: 80px;
+        font-weight: 600;
+        padding-bottom: 50px;
+        @media (max-width: 524px) {
+            padding: 20px 0px;
+        }
+        .logos {
+            width: auto;
+            height: 70px;
+        }
+    }
+    .description {
+        font-size: 24px;
+        padding-bottom: 20px;
+    }
+    .movie-list {
+        flex-wrap: wrap;
+        gap: 30px;
+        order: 3;
+        padding-bottom: 20px;
+        &_box {
+            width: inherit;
+            max-width: 31.5%;
+            height: auto;
+            min-height: 150px;
+            box-shadow: rgba(255, 255, 255, 0.2) 0px 7px 29px 0px;
+
+            @media (max-width: 1200px) {
+                max-width: unset;
+                width: 30.5%;
+            }
+            @media (max-width: 768px) {
+                max-width: unset;
+                width: 47%;
+            }
+            @media (max-width: 542px) {
+                max-width: unset;
+                width: 50%;
+            }
+        }
+        &_text {
+            backdrop-filter: blur(10px);
+            background-color: rgba(255, 255, 255, 0.5);
+            height: fit-content;
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            border-radius: 0 0 5px 5px;
+            padding: 10px 0px;
+            color: rgb(0, 0, 0);
+        }
+        &_content {
+            position: relative;
+            flex-grow: 1;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            max-height: 650px;
+            min-height: 450px;
+            border-radius: 5px;
+        }
+    }
+}
+@import "./searchbox";
