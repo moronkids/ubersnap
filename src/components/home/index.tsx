@@ -18,7 +18,7 @@ function Index(props: any) {
     }, [])
     const { temp } = useContext(Hooks);
     const { movie } = useSelector((state: any) => ({
-        movie: state.movie.list.data.Search
+        movie: state?.movie?.list?.data?.Search
     }));
     return (
         <>
